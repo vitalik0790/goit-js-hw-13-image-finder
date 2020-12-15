@@ -3,7 +3,7 @@ import imagesCardTpl from './templates/templates.hbs';
 import debounce from 'lodash.debounce';
 import PixabayApiServise from './js/apiService';
 import { onClickImage } from './js/modal-img';
-import './styles.css';
+import './styles.scss';
 
 const pixabayApiServise = new PixabayApiServise();
 
