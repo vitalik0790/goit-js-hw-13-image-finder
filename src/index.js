@@ -45,7 +45,7 @@ const intersectionCallback = entries => {
 };
 
 const intersectionOptions = {
-    rootMargin: '0% 0% 50% 0%',
+    rootMargin: '0% 0% 20% 0%',
 };
 
 const observer = new IntersectionObserver(
