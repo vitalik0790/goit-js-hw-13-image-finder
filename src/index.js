@@ -8,7 +8,12 @@ import './styles.scss';
 const pixabayApiServise = new PixabayApiServise();
 
 refs.input.addEventListener('input', debounce(onSearchInputChange, 500));
+refs.input.addEventListener('submit', preventtDefault)
 refs.outputList.addEventListener('click', onClickImage);
+
+function preventtDefault(event) {
+    event.preventDefault();
+}
 
 function onSearchInputChange({ target }) {
     pixabayApiServise.query = target.value;
@@ -45,7 +50,7 @@ const intersectionCallback = entries => {
 };
 
 const intersectionOptions = {
-    rootMargin: '0% 0% 20% 0%',
+    rootMargin: '0% 0% 10% 0%',
 };
 
 const observer = new IntersectionObserver(
